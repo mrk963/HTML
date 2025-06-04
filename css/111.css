@@ -1,8 +1,8 @@
-/* === 基本設定 === */
+
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #FFC497;
+    background-color: #3d147a;
     scroll-behavior: smooth;
     font-family: sans-serif;
 }
@@ -12,16 +12,21 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
-    background: #870002;
     width: 100%;
     height: 80px;
+    background: #ae0d5e;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     z-index: 999;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 0 20px;
 }
-
+.top-left {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 圖片與文字之間的間距 */
+}
 #clok {
     display: flex;
     gap: 10px;
@@ -30,9 +35,9 @@ html, body {
 }
 
 .topbon {
-    background: #A60000;
     width: 140px;
     height: 60px;
+    background: #ae0d5e;
     color: white;
     text-align: center;
     line-height: 60px;
@@ -45,39 +50,126 @@ html, body {
     color: white;
     text-decoration: none;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 140px;
+    height: 60px;
 }
 
-.topbon:hover,
-.topbon a:hover {
-    background: #320506;
-    color: #e0e0e0;
+
+.topbon:hover,.topbon a:hover {
+    background: #830b42;
+    color:#3d147a;
 }
 
-/* === 首頁標題 === */
+/* === 首頁區塊 === */
 #frontpage {
-    padding-top: 100px; /* 避開固定 top */
+    padding-top: 100px;
 }
-
 /* === 團隊區塊 === */
 #staff {
     display: flex;
     flex-direction: column;
     gap: 50px;
     padding: 50px 20px;
-    background-color: #FFE899;
     justify-content: center;
 }
 
-/* === 每位成員的外層排版容器 === */
+/* 個別成員外層容器 */
 #fox, #long, #me {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    scroll-margin-top: 100px;
 }
 
-/* === 圖片與文字橫向排列 === */
+
+
+#nav-menu .topbon {
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+#hamburger {
+    font-size: 50px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 100px 0 0;
+    line-height: 1;
+    font-family: inherit;
+    font-weight: bold;
+    display: block; /* 電腦手機都顯示 */
+    z-index: 1000; /* 讓按鈕不被遮擋 */
+    position: relative;
+}
+
+/* 導覽列一開始隱藏 */
+
+
+/* 漢堡按鈕 hover */
+#hamburger:hover {
+    color: #3d147a;
+}
+
+
+#nav-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #ae0d5e;
+    width: 200px;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+#nav-menu.active {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#toptext {
+    color:black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.topimg{
+    height: 80px;
+    width: auto;
+
+}
+
+.topbon {
+    width: 140px;
+    height: 60px;
+    background:#ae0d5e;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px auto;
+}
+
+.topbon a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* 圖片與文字排列容器 */
 .img-container {
     display: flex;
     flex-direction: row;
@@ -87,7 +179,7 @@ html, body {
     margin: 0 auto;
 }
 
-/* === 圖片樣式 === */
+/* 圖片樣式 */
 .img {
     width: 300px;
     height: auto;
@@ -95,16 +187,22 @@ html, body {
     display: block;
 }
 
-/* === 文字樣式 === */
+/* 文字容器 */
 .imgtext-block {
     max-width: 600px;
 }
+/* 一開始隱藏選單 */
+#nav-menu.hidden {
+    display: none;
+}
 
+/* 文字樣式 */
 .imgtext {
     font-size: 18px;
     font-weight: bold;
     line-height: 1.6;
     margin-bottom: 5px;
+    color: white;
 }
 
 .imgtextbig {
@@ -112,6 +210,7 @@ html, body {
     font-weight: bold;
     text-align: center;
     margin-top: 40px;
+    color: white;
 }
 
 .imgtextmin {
@@ -119,17 +218,45 @@ html, body {
     font-size: 23px;
     font-weight: bold;
     text-align: center;
+    color: white;
+    
 }
-
+.textmin a{padding: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    color: aquamarine;
+    text-decoration: none;
+    display:block;    /* 讓連結變成像按鈕的區塊 */
+   }
+.textmin:hover a {color: darkcyan;}
 .intext {
     font-size: 18px;
     font-weight: bold;
     line-height: 1.6;
     text-align: center;
     margin: 20px;
+    color: white;
+}
+.img2-container{
+    display: flex;
+    flex-direction: column;  /* 改為垂直排列 */
+    align-items: center;     /* 水平置中每個項目 */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-/* === 通用垂直區塊樣式（如 .分）=== */
+.threetext {
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: center;
+    margin: 20px;
+    color: white;
+}
+
+/* 通用垂直排版區塊 */
 .分 {
     margin: 20px;
     display: flex;
@@ -137,14 +264,48 @@ html, body {
     align-items: center;
     justify-content: center;
 }
-.threetext{font-size: 23px;
-    font-weight: bold;
-    line-height: 1.6;
+#aa {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* 小螢幕自動換行 */
+    margin-top: 20px;
+}
+/* === 錨點避免被遮住 === */
+#pw, #fox, #long, #me {
+    scroll-margin-top: 100px;
+}
+.wtextb{color: white;
+font-size: 45px;
+font-weight: bold;
     text-align: center;
-    margin: 20px;}
-/* 手機版 RWD：最大寬度為 768px 以下 */
+}
+.wtextm{color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+.wtextl{color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.wtextm2{color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.wtextl2{color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.color{background-color: #ae0d5e;
+width: auto;
+height: 60px;}
+
+/* === 手機版 RWD (寬度小於 768px) === */
 @media (max-width: 768px) {
-    /* 導覽列變成可換行、置中 */
     #clok {
         flex-wrap: wrap;
         justify-content: center;
@@ -158,8 +319,10 @@ html, body {
         margin: 5px 0;
         font-size: 14px;
     }
-
-    /* 團隊介紹改為上下排列 */
+    .img2-container {
+        flex-direction: column;
+        align-items: center;
+    }
     .img-container {
         flex-direction: column;
         align-items: center;
@@ -199,5 +362,72 @@ html, body {
         font-size: 20px;
         margin: 10px;
     }
-}
+    /* === 漢堡選單圖示 === */
+    @media (max-width: 768px) {
+        .img-container {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
 
+        .img {
+            width: 80%;
+            max-width: 300px;
+        }
+
+        .imgtext-block {
+            max-width: 100%;
+            padding: 0 10px;
+        }
+
+        .imgtext {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .imgtextmin {
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .imgtextbig {
+            font-size: 24px;
+        }
+
+        .intext {
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        .threetext {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        /* 漢堡按鈕常態顯示（電腦+手機） */
+        #hamburger {
+            font-size: 20px;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 0;
+            margin: 0 20px 0 0;
+            line-height: 1;
+            font-family: inherit;
+            font-weight: bold;
+            display: block; /* 電腦手機都顯示 */
+            z-index: 1000; /* 讓按鈕不被遮擋 */
+            position: relative;
+        }
+
+        /* 導覽列一開始隱藏 */
+       
+
+        /* 漢堡按鈕 hover */
+        #hamburger:hover {
+            color: #3d147a;
+        }
+
+    }
+}
