@@ -364,11 +364,11 @@ html, body {
     }
 
     .imgtextbig {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .intext, .threetext {
-        font-size: 10px;
+        font-size: 15px;
         margin: 10px;
     }
 
@@ -381,10 +381,10 @@ html, body {
     }
 
     .wtextm2 {
-        font-size: 11px;
+        font-size: 15px;
     }
 
     .wtextl2 {
-        font-size: 6px;
+        font-size:10px;
     }
 }
