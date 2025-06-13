@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>海特利斯</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link href="111.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+
+
+<!-- 導覽列 -->
+<div id="top">
+    <div class="top-left">
+        <img src="img/靜.png" class="topimg" alt="陳怡靜">
+        <div id="toptext">海特利斯</div>
+    </div>
+    <button id="hamburger">☰</button>
+    <div id="nav-menu">
+        <div class="topbon"><a href="#frontpage">首頁</a></div>
+        <div class="topbon"><a href="#staff">團隊簡介</a></div>
+        <div class="topbon"><a href="#Talent">招募人才</a></div>
+        <div class="topbon"><a href="#mail">聯絡方式</a></div>
+    </div>
+</div>
+
+<!-- 首頁標題 -->
+<div id="frontpage">
+    <div id="frontpageimg">
+        <div class="img-overlay">
+            <div class="imgtextbig">海特利斯</div>
+            <div class="threetext">從某星球來地球旅遊的海特利斯</div>
+        </div>
+    </div>
+</div>
+<div class="color"></div>
+<!-- 團隊介紹 -->
+<div id="staff">
+    <!-- <div id="onetreach" class="imgtextmin">總指導老師：陳世勇</div>-->
+    <div id="teacher" class="img-container">
+
+        <div class="imgtext-block">
+            <div class="wtextb">指導老師－陳世勇</div>
+            <div class="imgtext">
+
+            </div>
+        </div>
+    </div>
+    <div id="fox" class="img-container">
+        <img src="img/261825.jpg" class="img" alt="陳怡靜">
+        <div class="imgtext-block">
+            <div class="wtextb">組長－陳怡靜／海嗨</div>
+            <div class="imgtext">
+
+                主要負責：企劃統籌、角色設定、美術製作、3D人物建模<br>
+                擅長技能：Maya 3D建模、美術設計、腳本撰寫、歌詞創作、角色配音<br>
+                可能觸發：PR影片剪輯、特效合成<br>
+                標籤：#有時候會被人撬開腦袋看一看裡面有什麼 #異想天開 #藝術家 #擁有小窩鑰匙的人<br>
+                MBTI：ENTJ<br>
+                我介紹：是一隻在深海遊走的一尾赤海狐 🦊，時而夢想家，時而實踐派。
+            </div>
+        </div>
+    </div>
+
+    <div id="long" class="img-container">
+        <img src="img/S__7331871.jpg" class="img" alt="鍾寶儀">
+        <div class="imgtext-block">
+            <div class="wtextb">組員－鍾寶儀－👶🐟</div>
+            <div class="imgtext">
+                主要負責：文書處理、專題監製、後期製作<br>
+                擅長技能：After Effects 動態設計、Illustrator 矢量設計、Photoshop 圖像處理、專業錄音、歌唱演出<br>
+                可能觸發：混音製作、音樂製作人<br>
+                標籤：#人生沒音樂怎麼活 #AE特效磨練中 #錄音室小型地縛靈
+                <br>
+                MBTI：INFP
+                <br>
+                人生最重要的就是睡眠🛏️所以我不是在睡覺，就是在睡覺的路上😴
+            </div>
+        </div>
+    </div>
+
+    <div id="me" class="img-container">
+        <img src="img/10098.jpg" class="img" alt="岳姿瑋">
+        <div class="imgtext-block">
+            <div class="wtextb"> 岳姿瑋 / MJ</div>
+            <div class="imgtext">
+
+                主要負責：Unity 遊戲開發、互動程式設計、網頁前端程式設計<br>
+                擅長技能：程式設計、遊戲敘事設計<br>
+                可能觸發：Debug神器、開發奇妙Shader特效、熬夜寫程式<br>
+                標籤：#二次元程序猿 #技術宅 #潛行式Debug玩家<br>
+                MBTI：INFJ-T<br>
+                一個喜愛二次元世界的程序猿 🐒，用程式語言構築奇幻宇宙。
+            </div>
+        </div>
+    </div>
+</div>
+<div class="color"></div>
+<!-- 招募人才 -->
+<div id="Talent">
+    <div class="imgtextbig">招募的人才ing~</div>
+    <div class="threetext">
+        目前團隊成員專注於企劃、美術、遊戲開發，未來希望擴充人才，讓作品呈現更完整流暢。
+        歡迎對原創角色、互動遊戲有熱情的夥伴加入！ 🚀✨
+    </div>
+    <div>
+        <div id="img2-wrapper">
+            <div class="wtextm">【主要希望招募類型】</div>
+            <div id="aa">
+                <div class="img2-container" id="ii1">
+                    <div class="wtextm2">技術型人才</div>
+                    <div class="wtextl2">
+                        1：3D硬物件建模<br>
+                        2：3D特效製作<br>
+                        3：熟悉 Maya / Blender / Unity<br>
+                        4：熟悉影音剪輯者
+                    </div>
+                </div>
+
+                <div class="img2-container" id="ii2">
+                    <div class="wtextm2">文書處理助理</div>
+                    <div class="wtextl2">
+                        1：彙整文案、簡報整理<br>
+                        2：操作 Word / PowerPoint
+                    </div>
+                </div>
+
+                <div class="img2-container" id="ii3">
+                    <div class="wtextm2">行銷推廣人才</div>
+                    <div class="wtextl2">
+                        1：角色IP宣傳策略<br>
+                        2：撰寫有趣推廣貼文
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="textmin"><a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfGSanjXn1qoRmHSgCXETY4zk0AO-aVc2UxSgjVMSNvs1IH7g/viewform?usp=sharing&ouid=110016973591604193669"
+                target="_blank"rel="noopener noreferrer">招募表單</a></div>
+
+    </div>
+</div>
+<div class="color"></div>
+<!-- 聯絡方式 -->
+<div id="mail">
+    <div class="threetext">【聯絡方式】</div>
+    <div class="intext">
+        信箱:SEAFOX0414@GMAIL.COM
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#hamburger").click(function () {
+            $("#nav-menu").toggleClass("active");
+        });
+    });
+
+</script>
+</body>
+</html>
