@@ -332,29 +332,31 @@ html, body {
         margin: 0 20px 0 0;
     }
 
-    .img-container {
-        flex-direction: row;
-        align-items: flex-start;
-        text-align: left;
-        flex-wrap: wrap;
-        margin: 10px;
-    }
+   .img-container {
+    flex-direction: row; /* 保持水平排列 */
+    flex-wrap: nowrap;   /* 禁止換行（選擇性） */
+    align-items: flex-start;
+    text-align: left;
+    margin: 10px;
+  }
 
-    .img {
-        width: 50%;
-        max-width: 150px;
-        margin: 10px;
-    }
+   .img {
+    width: 40%;         /* 手機上圖片略小 */
+    max-width: none;    /* 不限制最大寬度 */
+    margin: 0;
+  }
 
     .imgtext-block {
-        max-width: 100%;
-        padding: 0 10px;
-    }
+    width: 60%;         /* 讓文字佔剩餘空間 */
+    padding: 0 10px;
+  }
 
-    .imgtext {
-        font-size: 10px;
-        line-height: 1.5;
-    }
+
+
+  .imgtext {
+    font-size: 14px;    /* 適合小螢幕閱讀 */
+    line-height: 1.5;
+  }
 
     .imgtextmin {
         font-size: 20px;
