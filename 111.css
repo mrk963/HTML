@@ -348,7 +348,7 @@ height: 60px;}
         flex-direction: column;
         align-items: center;
     }
-    .wtextb{font-size: 20px;}
+    .wtextb{font-size: 10px;}
     .img-container {
        flex-direction: row; /* 強制左右排列 */
             align-items: flex-start;
@@ -361,7 +361,7 @@ height: 60px;}
     .wtextm2{font-size: 15px;}
     .img {
         width: 50%;
-        max-width: 150px;
+        max-width: 50px;
     }
      .imgtext-block {
         max-width: 100%;
@@ -370,7 +370,7 @@ height: 60px;}
 
     .imgtext {
         font-size: 5px;
-        line-height: 1;
+        line-height: 1.5;
     }
 
 
@@ -422,8 +422,8 @@ height: 60px;}
 
 
      .imgtext {
-        font-size: 5px;
-        line-height: 1;
+        font-size: 10px;
+        line-height: 1.5;
     }
 
         .imgtextmin {
