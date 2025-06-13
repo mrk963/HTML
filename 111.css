@@ -368,7 +368,7 @@ html, body {
     }
 
     .intext, .threetext {
-        font-size: 25px;
+        font-size: 15px;
         margin: 10px;
     }
 
@@ -381,10 +381,10 @@ html, body {
     }
 
     .wtextm2 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .wtextl2 {
-        font-size: 13px;
+        font-size: 10px;
     }
 }
