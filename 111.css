@@ -354,37 +354,37 @@ html, body {
 
 
   .imgtext {
-    font-size: 14px;    /* 適合小螢幕閱讀 */
+    font-size: 10px;    /* 適合小螢幕閱讀 */
     line-height: 1.5;
   }
 
     .imgtextmin {
-        font-size: 20px;
+        font-size: 15px;
         padding: 10px;
     }
 
     .imgtextbig {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .intext, .threetext {
-        font-size: 16px;
+        font-size: 10px;
         margin: 10px;
     }
 
     .wtextb {
-        font-size: 20px;
-    }
-
-    .wtextm {
-        font-size: 20px;
-    }
-
-    .wtextm2 {
         font-size: 15px;
     }
 
-    .wtextl2 {
+    .wtextm {
+        font-size: 15px;
+    }
+
+    .wtextm2 {
         font-size: 10px;
+    }
+
+    .wtextl2 {
+        font-size: 5px;
     }
 }
